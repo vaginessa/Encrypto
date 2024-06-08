@@ -10,7 +10,7 @@ env:
   playstore_name: ${{ github.repository_owner }}
   
   # repo name variable
-  repository_name: ${{ github.repository }}
+  repository_name: ${{ github.event.repository.name }}
 
 on:
   # Triggers the workflow on push or pull request events but only for default and protected branches
